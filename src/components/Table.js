@@ -1,4 +1,4 @@
-import useState from "react";
+import {useState} from "react";
 
 let arr =[]
 for(let i=0;i<32;i++){arr.push(i)}
@@ -25,7 +25,7 @@ function isPrime(num) {
 
 const Table = ({classColor, num}) => { 
 
- const[stateNumber,setStateNumber]=useState(0)
+ const[stateNumber,setStateNumber]=useState(num)
 
   const laasot = () => {
     setStateNumber(stateNumber+getRandomInteger())
@@ -37,4 +37,4 @@ const Table = ({classColor, num}) => {
     )
 }
 
- export  {Table,arr,isPrime};
+ export  {Table,isPrime};
